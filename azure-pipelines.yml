@@ -18,7 +18,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-
   steps:
 - task: DotNetCoreCLI@2
   displayName: Build
@@ -27,7 +26,7 @@ steps:
     projects: '**/*.csproj'
     arguments: '--configuration Release' # Update this to match your need
 
-    steps:
+steps:
 # ...
 # do this after other tasks such as building
 - task: DotNetCoreCLI@2
